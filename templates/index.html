@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Predict Arrest/Crime</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			color: #333;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			font-size: 2.5rem;
+			text-align: center;
+			margin-top: 50px;
+		}
+		form {
+			margin: 50px auto;
+			width: 50%;
+			background-color: #fff;
+			padding: 20px;
+			box-shadow: 0 2px 5px rgba(0,0,0,.2);
+			border-radius: 5px;
+		}
+		input[type="text"],
+		select {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: none;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0,0,0,.2);
+			font-size: 1rem;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 1.2rem;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Predict Arrest/Crime</h1>
+	<form method="post">
+		<label for="field1">IUCR:</label>
+		<input type="text" id="field1" name="field1" required>
+		
+		<label for="field2">Primary Type:</label>
+		<input type="text" id="field2" name="field2" required>
+		
+		<label for="field3">Desription:</label>
+		<input type="text" id="field3" name="field3" required>
+		
+		<label for="field4">FBI code:</label>
+		<input type="text" id="field4" name="field4" required>
+		
+		<label for="field5">Primary Type General:</label>
+		<input type="text" id="field5" name="field5" required>
+		
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
